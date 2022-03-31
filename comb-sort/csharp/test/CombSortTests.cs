@@ -56,8 +56,8 @@ public class CombSortTests
 
         Assert.Equal(expected, list);
 
-        _output.WriteLine($"Array.Sort               : {runtimeSortTime:0.000} [msec]");
-        _output.WriteLine($"Shaker Sort              : {mySortTime:0.000} [msec]");
-        _output.WriteLine($"Shaker Sort / Array.Sort : {(mySortTime * 100d / runtimeSortTime):0.000} [%]");
+        _output.WriteLine($"Array.Sort             : {runtimeSortTime:0.000} [msec]");
+        _output.WriteLine($"Comb Sort              : {mySortTime:0.000} [msec]");
+        _output.WriteLine($"Comb Sort / Array.Sort : {(mySortTime * 100d / runtimeSortTime):0.000} [%]");
     }
 }
