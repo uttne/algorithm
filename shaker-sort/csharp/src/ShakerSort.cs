@@ -2,7 +2,7 @@ namespace Algorithm
 {
     public class ShakerSort
     {
-        public async void Sort<T>(T[] list)
+        public void Sort<T>(T[] list)
         where T : IComparable<T>
         {
             int l = 0;
