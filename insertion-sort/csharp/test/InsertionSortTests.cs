@@ -30,6 +30,20 @@ public class InsertionSortTests
 
 
     [Fact]
+    public void TestWiki()
+    {
+        var list = new int[] { 99, 77, 52, 68, 6, 68, 45, 84, 15, 1 };
+
+        var expected = new int[] { 1, 6, 15, 45, 52, 68, 68, 77, 84, 99 };
+
+        var alg = new InsertionSort();
+        alg.SortByWiki(list);
+
+        Assert.Equal(expected, list);
+    }
+
+
+    [Fact]
     public void SpeedTest()
     {
         var random = new Random(0);
